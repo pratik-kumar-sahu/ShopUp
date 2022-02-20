@@ -1,12 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopUp</title>
-</head>
-<body>
-    ShopUp
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://fuzz-ui.netlify.app/styles/FuzzUI.css" />
+        <link rel="stylesheet" href="./styles/ShopUp.css" />
+        <title>ShopUp</title>
+    </head>
+    <body>
+        <main class="main-body flex-column p-3">
+            <div class="navigation flex-j-space-a-center p-5">
+                <div class="flex-align-center">
+                    <img
+                        class="img-responsive navigation-img ml-1 mr-5"
+                        src="https://images.unsplash.com/photo-1516876437184-593fda40c7ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                        alt="nav-logo"
+                    />
+                    <p>Shop Up</p>
+                </div>
+
+                <div class="flex-align-center">
+                    <ion-icon class="icon mx-3" name="heart-outline"></ion-icon>
+                    <ion-icon class="icon mx-3" name="cart-outline"></ion-icon>
+                    <ion-icon class="icon mx-3" name="notifications-outline"></ion-icon>
+                    <img class="avatar img-rounded avatar-sm mx-3" src="https://i.pravatar.cc/150?img=3" alt="avatar" />
+                    <ion-icon class="icon mx-3" name="options-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="flex-row containers">
+                <section class="sidebar p-4">
+                    <div class="menu flex-column">
+                        <span class="menu-item menu-item__selected"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon" name="grid-outline"></ion-icon>Categories</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Echo & Alexa</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Kindle & Books</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Electronics</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Home & Garden</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Fashion</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Health & Beauty</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Automotive</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Games</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Film & Music</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Animals</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Hobby</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Gift Cards</a
+                            ></span
+                        >
+                        <span class="menu-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon" name="albums-outline"></ion-icon>Sell</a
+                            ></span
+                        >
+                        <span class="menu-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon" name="help-circle-outline"></ion-icon>Help</a
+                            ></span
+                        >
+                    </div>
+                </section>
+
+                <section class="main-container px-5 pt-5">
+                    <img class="product-banner" src="https://i.pinimg.com/originals/a9/77/e4/a977e44161dc8090f587e6fa0056c22b.jpg" alt="banner">
+                    <div class="my-4">
+                        <h3 class="my-4">Popular Categories</h3>
+                        <div class="categories-section flex-row my-4">
+                            <span><ion-icon class="categories-icon" name="phone-portrait-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="watch-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="desktop-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="bag-handle-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="barbell-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="basketball-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="bed-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="camera-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="bicycle-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="game-controller-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="phone-portrait-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="watch-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="desktop-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="bag-handle-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="barbell-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="basketball-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="bed-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="camera-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="bicycle-outline"></ion-icon></span>
+                            <span><ion-icon class="categories-icon" name="game-controller-outline"></ion-icon></span>
+                        </div>
+
+                        <h3 class="my-4">Hot Deals</h3>
+                        <div class="categories-section flex-row my-4">
+                            <div class="product mr-5">
+                                <img class="img-responsive" src="https://www.oberlo.com/media/1603954764-image059.png?w=1824&fit=max" alt="product">
+                                <div class="my-3">
+                                    <h4>Product Name</h4>
+                                    <p class="brand-name">Brand Name</p>
+                                    <div class="flex-align-center">
+                                        <span class="mr-3">
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon class="rating-checked" name="star"></ion-icon>
+                                            </label>
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon class="rating-checked" name="star"></ion-icon>
+                                            </label>
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon class="rating-checked" name="star"></ion-icon>
+                                            </label>
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon class="rating-checked" name="star"></ion-icon>
+                                            </label>
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon name="star-outline"></ion-icon>
+                                            </label>
+                                        </span>
+                                        <span class="ratings">(4,000 ratings)</span>
+                                    </div>
+                                    <div>
+                                        <span class="discounted-price mr-3">₹ 230/-</span>
+                                        <span class="original-price">₹ 400/-</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product mr-5">
+                                <img class="img-responsive" src="https://www.oberlo.com/media/1603954764-image059.png?w=1824&fit=max" alt="product">
+                                <div class="my-3">
+                                    <h4>Product Name</h4>
+                                    <p class="brand-name">Brand Name</p>
+                                    <div class="flex-align-center">
+                                        <span class="mr-3">
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon class="rating-checked" name="star"></ion-icon>
+                                            </label>
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon class="rating-checked" name="star"></ion-icon>
+                                            </label>
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon class="rating-checked" name="star"></ion-icon>
+                                            </label>
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon class="rating-checked" name="star"></ion-icon>
+                                            </label>
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon name="star-outline"></ion-icon>
+                                            </label>
+                                        </span>
+                                        <span class="ratings">(4,000 ratings)</span>
+                                    </div>
+                                    <div>
+                                        <span class="discounted-price mr-3">₹ 230/-</span>
+                                        <span class="original-price">₹ 400/-</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product mr-5">
+                                <img class="img-responsive" src="https://www.oberlo.com/media/1603954764-image059.png?w=1824&fit=max" alt="product">
+                                <div class="my-3">
+                                    <h4>Product Name</h4>
+                                    <p class="brand-name">Brand Name</p>
+                                    <div class="flex-align-center">
+                                        <span class="mr-3">
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon class="rating-checked" name="star"></ion-icon>
+                                            </label>
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon class="rating-checked" name="star"></ion-icon>
+                                            </label>
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon class="rating-checked" name="star"></ion-icon>
+                                            </label>
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon class="rating-checked" name="star"></ion-icon>
+                                            </label>
+                                            <label>
+                                                <input class="rating-checkbox" type="checkbox" />
+                                                <ion-icon name="star-outline"></ion-icon>
+                                            </label>
+                                        </span>
+                                        <span class="ratings">(4,000 ratings)</span>
+                                    </div>
+                                    <div>
+                                        <span class="discounted-price mr-3">₹ 230/-</span>
+                                        <span class="original-price">₹ 400/-</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
 </html>
