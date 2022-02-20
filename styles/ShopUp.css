@@ -1,0 +1,149 @@
+:root {
+    --body-bg: #e2e8f0;
+    --main-container-bg: #eff6ff;
+    --wrong-bg: #fee2e2;
+    --color-icon: #60a5fa;
+
+    --color-brand-light: #ffedd5;
+    --color-brand: #f97316;
+
+    --border-light: 2px solid var(--color-primary-light);
+}
+
+.main-body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--body-bg);
+}
+
+.navigation {
+    width: 100%;
+    height: 6.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: var(--shadow);
+    background-color: var(--color-white);
+    border-bottom: var(--border-light);
+}
+
+.navigation-img {
+    width: 5rem;
+}
+
+.avatar {
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.containers {
+    height: calc(100vh - 8rem);
+}
+
+/* Sidebar -------------> */
+
+.sidebar {
+    width: 25rem;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-end-start-radius: 1rem;
+    background-color: var(--color-white);
+}
+
+.sidebar span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-item__icon {
+    height: 3rem;
+    margin: 0.5rem 1rem;
+    font-weight: 600;
+}
+
+.menu-item {
+    font-weight: bolder;
+    color: var(--color-primary-dark);
+}
+
+.menu-item__selected {
+    border-radius: 0.5rem;
+    background-color: var(--color-brand-light);
+}
+
+.menu-item__selected ion-icon {
+    color: var(--color-brand);
+}
+
+.category-item {
+    font-size: 1.4rem;
+}
+
+/* Main-Container -----------------> */
+
+.main-container {
+    width: calc(100vw - 26.5rem);
+    border-bottom-right-radius: 1rem;
+    border-right: var(--border-light);
+    border-bottom: var(--border-light);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.product-banner {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.categories-section {
+    width: calc(100vw - 26.5rem);
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.categories-icon {
+    font-size: 3.5rem;
+    margin-right: 2rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: var(--color-white);
+}
+
+.categories-icon:hover {
+    color: var(--color-brand);
+}
+
+.product {
+    width: 25rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.product > img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.brand-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--royalblue);
+}
+
+.ratings {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.discounted-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.original-price {
+    text-decoration: line-through;
+}
