@@ -1,4 +1,5 @@
 :root {
+    --body-bg-light: #f1f5f9;
     --body-bg: #e2e8f0;
     --main-container-bg: #eff6ff;
     --wrong-bg: #fee2e2;
@@ -33,6 +34,8 @@
 .avatar {
     margin: 0;
     margin-left: 2rem;
+    cursor: pointer;
+    vertical-align: middle;
 }
 
 .containers {
@@ -99,8 +102,8 @@
 }
 
 .categories-section {
-    width: calc(100vw - 26.5rem);
-    overflow: hidden;
+    width: calc(100vw - 28.5rem);
+    overflow-y: hidden;
     overflow-x: scroll;
 }
 
@@ -118,6 +121,7 @@
 }
 
 .product {
+    min-width: 25rem;
     width: 25rem;
     height: auto;
     overflow: hidden;
@@ -146,4 +150,36 @@
 
 .original-price {
     text-decoration: line-through;
+}
+
+/* SignIn / SignUp ---------------> */
+
+.sign-container {
+    width: 40rem;
+    height: auto;
+    border-radius: 1rem;
+    background-color: var(--color-white);
+}
+
+.sign-container a {
+    color: var(--color-brand);
+}
+
+.input-box {
+    height: 3.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    outline-style: none;
+    background-color: var(--body-bg-light);
+}
+
+.btn {
+    width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.btn-sign {
+    background-color: var(--color-brand-light);
 }
