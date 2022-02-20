@@ -102,8 +102,8 @@
 }
 
 .categories-section {
-    width: calc(100vw - 26.5rem);
-    overflow: hidden;
+    width: calc(100vw - 28.5rem);
+    overflow-y: hidden;
     overflow-x: scroll;
 }
 
@@ -121,6 +121,7 @@
 }
 
 .product {
+    min-width: 25rem;
     width: 25rem;
     height: auto;
     overflow: hidden;
