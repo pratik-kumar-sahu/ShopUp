@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://fuzz-ui.netlify.app/styles/FuzzUI.css" />
+        <link rel="stylesheet" href="../styles/ShopUp.css" />
+        <title>ShopUp | Cart</title>
+    </head>
+    <body>
+        <main class="main-body flex-column p-3">
+            <nav class="navigation flex-j-space-a-center p-5">
+                <div class="flex-align-center">
+                    <img
+                        class="img-responsive navigation-img ml-1 mr-5"
+                        src="https://images.unsplash.com/photo-1516876437184-593fda40c7ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                        alt="nav-logo"
+                    />
+                    <p><a href="../index.html">Shop Up</a></p>
+                </div>
+
+                <div class="flex-align-center">
+                    <a class="flex-j-a-center" href="./wishlist.html">
+                        <ion-icon class="icon mx-3" name="heart-outline"></ion-icon>
+                    </a>
+                    <a class="flex-j-a-center" href="#">
+                        <ion-icon class="icon mx-3" name="cart-outline"></ion-icon>
+                    </a>
+                    <ion-icon class="icon mx-3" name="notifications-outline"></ion-icon>
+                    <img class="avatar img-rounded avatar-sm mx-3" src="https://i.pravatar.cc/150?img=3" alt="avatar" />
+                    <ion-icon class="icon mx-3" name="options-outline"></ion-icon>
+                </div>
+            </nav>
+
+            <div class="flex-row containers">
+                <section class="sidebar p-4">
+                    <div class="menu flex-column">
+                        <span class="menu-item menu-item__selected"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon" name="grid-outline"></ion-icon>Categories</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Echo & Alexa</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Kindle & Books</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Electronics</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Home & Garden</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Fashion</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Health & Beauty</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Automotive</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Games</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Film & Music</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Animals</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Hobby</a
+                            ></span
+                        >
+                        <span class="category-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon"></ion-icon>Gift Cards</a
+                            ></span
+                        >
+                        <span class="menu-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon" name="albums-outline"></ion-icon>Sell</a
+                            ></span
+                        >
+                        <span class="menu-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon" name="help-circle-outline"></ion-icon>Help</a
+                            ></span
+                        >
+                        <span class="menu-item"
+                            ><a class="flex-align-center" href="#"
+                                ><ion-icon class="menu-item__icon" name="exit-outline"></ion-icon>Logout</a
+                            ></span
+                        >
+                    </div>
+                </section>
+
+                <section class="main-container flex-row p-5">
+                    <div class="mr-5 cart-col1">
+                        <h3>My Cart</h3>
+                        <div class="cart-items my-3 px-5 pt-5">
+                            <div class="cart-item mb-5">
+                                <img
+                                    class="img-responsive mr-5"
+                                    src="https://www.oberlo.com/media/1603954764-image059.png?w=1824&fit=max"
+                                    alt="product"
+                                />
+                                <div class="mr-5 cart-item__content">
+                                    <h4>Product Name</h4>
+                                    <p class="brand-name">Brand Name</p>
+                                    <div>
+                                        <span class="discounted-price mr-3">₹ 230/-</span>
+                                    </div>
+                                </div>
+                                <div class="flex-align-center mr-5">
+                                    <ion-icon class="icon" name="remove-circle-outline"></ion-icon>
+                                    <span>4</span>
+                                    <ion-icon class="icon" name="add-circle-outline"></ion-icon>
+                                </div>
+                                <button class="btn-wishlist btn-primary-solid mr-5">Move to Wishlist</button>
+                                <ion-icon class="icon product-delete" name="trash-outline"></ion-icon>
+                            </div>
+
+                            <hr class="mb-5">
+                            
+                            <div class="cart-item mb-5">
+                                <img
+                                    class="img-responsive mr-5"
+                                    src="https://www.oberlo.com/media/1603954764-image059.png?w=1824&fit=max"
+                                    alt="product"
+                                />
+                                <div class="mr-5 cart-item__content">
+                                    <h4>Product Name</h4>
+                                    <p class="brand-name">Brand Name</p>
+                                    <div>
+                                        <span class="discounted-price mr-3">₹ 230/-</span>
+                                    </div>
+                                </div>
+                                <div class="flex-align-center mr-5">
+                                    <ion-icon class="icon" name="remove-circle-outline"></ion-icon>
+                                    <span>4</span>
+                                    <ion-icon class="icon" name="add-circle-outline"></ion-icon>
+                                </div>
+                                <button class="btn-wishlist btn-primary-solid mr-5">Move to Wishlist</button>
+                                <ion-icon class="icon product-delete" name="trash-outline"></ion-icon>
+                            </div>
+
+                            <hr class="mb-5">
+
+                            <div class="cart-item mb-5">
+                                <img
+                                    class="img-responsive mr-5"
+                                    src="https://www.oberlo.com/media/1603954764-image059.png?w=1824&fit=max"
+                                    alt="product"
+                                />
+                                <div class="mr-5 cart-item__content">
+                                    <h4>Product Name</h4>
+                                    <p class="brand-name">Brand Name</p>
+                                    <div>
+                                        <span class="discounted-price mr-3">₹ 230/-</span>
+                                    </div>
+                                </div>
+                                <div class="flex-align-center mr-5">
+                                    <ion-icon class="icon" name="remove-circle-outline"></ion-icon>
+                                    <span>4</span>
+                                    <ion-icon class="icon" name="add-circle-outline"></ion-icon>
+                                </div>
+                                <button class="btn-wishlist btn-primary-solid mr-5">Move to Wishlist</button>
+                                <ion-icon class="icon product-delete" name="trash-outline"></ion-icon>
+                            </div>
+
+                            <hr class="mb-5">
+
+                            <div class="cart-item mb-5">
+                                <img
+                                    class="img-responsive mr-5"
+                                    src="https://www.oberlo.com/media/1603954764-image059.png?w=1824&fit=max"
+                                    alt="product"
+                                />
+                                <div class="mr-5 cart-item__content">
+                                    <h4>Product Name</h4>
+                                    <p class="brand-name">Brand Name</p>
+                                    <div>
+                                        <span class="discounted-price mr-3">₹ 230/-</span>
+                                    </div>
+                                </div>
+                                <div class="flex-align-center mr-5">
+                                    <ion-icon class="icon" name="remove-circle-outline"></ion-icon>
+                                    <span>4</span>
+                                    <ion-icon class="icon" name="add-circle-outline"></ion-icon>
+                                </div>
+                                <button class="btn-wishlist btn-primary-solid mr-5">Move to Wishlist</button>
+                                <ion-icon class="icon product-delete" name="trash-outline"></ion-icon>
+                            </div>
+
+                            <hr class="mb-5">
+
+                            <div class="cart-item mb-5">
+                                <img
+                                    class="img-responsive mr-5"
+                                    src="https://www.oberlo.com/media/1603954764-image059.png?w=1824&fit=max"
+                                    alt="product"
+                                />
+                                <div class="mr-5 cart-item__content">
+                                    <h4>Product Name</h4>
+                                    <p class="brand-name">Brand Name</p>
+                                    <div>
+                                        <span class="discounted-price mr-3">₹ 230/-</span>
+                                    </div>
+                                </div>
+                                <div class="flex-align-center mr-5">
+                                    <ion-icon class="icon" name="remove-circle-outline"></ion-icon>
+                                    <span>4</span>
+                                    <ion-icon class="icon" name="add-circle-outline"></ion-icon>
+                                </div>
+                                <button class="btn-wishlist btn-primary-solid mr-5">Move to Wishlist</button>
+                                <ion-icon class="icon product-delete" name="trash-outline"></ion-icon>
+                            </div>
+
+                            <hr class="mb-5">
+
+                            <div class="cart-item mb-5">
+                                <img
+                                    class="img-responsive mr-5"
+                                    src="https://www.oberlo.com/media/1603954764-image059.png?w=1824&fit=max"
+                                    alt="product"
+                                />
+                                <div class="mr-5 cart-item__content">
+                                    <h4>Product Name</h4>
+                                    <p class="brand-name">Brand Name</p>
+                                    <div>
+                                        <span class="discounted-price mr-3">₹ 230/-</span>
+                                    </div>
+                                </div>
+                                <div class="flex-align-center mr-5">
+                                    <ion-icon class="icon" name="remove-circle-outline"></ion-icon>
+                                    <span>4</span>
+                                    <ion-icon class="icon" name="add-circle-outline"></ion-icon>
+                                </div>
+                                <button class="btn-wishlist btn-primary-solid mr-5">Move to Wishlist</button>
+                                <ion-icon class="icon product-delete" name="trash-outline"></ion-icon>
+                            </div>
+
+                            <hr class="mb-5">
+
+                            <div class="cart-item mb-5">
+                                <img
+                                    class="img-responsive mr-5"
+                                    src="https://www.oberlo.com/media/1603954764-image059.png?w=1824&fit=max"
+                                    alt="product"
+                                />
+                                <div class="mr-5 cart-item__content">
+                                    <h4>Product Name</h4>
+                                    <p class="brand-name">Brand Name</p>
+                                    <div>
+                                        <span class="discounted-price mr-3">₹ 230/-</span>
+                                    </div>
+                                </div>
+                                <div class="flex-align-center mr-5">
+                                    <ion-icon class="icon" name="remove-circle-outline"></ion-icon>
+                                    <span>4</span>
+                                    <ion-icon class="icon" name="add-circle-outline"></ion-icon>
+                                </div>
+                                <button class="btn-wishlist btn-primary-solid mr-5">Move to Wishlist</button>
+                                <ion-icon class="icon product-delete" name="trash-outline"></ion-icon>
+                            </div>
+
+                            <hr class="mb-5">
+
+                            <div class="cart-item mb-5">
+                                <img
+                                    class="img-responsive mr-5"
+                                    src="https://www.oberlo.com/media/1603954764-image059.png?w=1824&fit=max"
+                                    alt="product"
+                                />
+                                <div class="mr-5 cart-item__content">
+                                    <h4>Product Name</h4>
+                                    <p class="brand-name">Brand Name</p>
+                                    <div>
+                                        <span class="discounted-price mr-3">₹ 230/-</span>
+                                    </div>
+                                </div>
+                                <div class="flex-align-center mr-5">
+                                    <ion-icon class="icon" name="remove-circle-outline"></ion-icon>
+                                    <span>4</span>
+                                    <ion-icon class="icon" name="add-circle-outline"></ion-icon>
+                                </div>
+                                <button class="btn-wishlist btn-primary-solid mr-5">Move to Wishlist</button>
+                                <ion-icon class="icon product-delete" name="trash-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-col2">
+                        <h3>Price details</h3>
+                        <div class="price-details my-3 p-5">
+                            <div class="flex-j-space-a-center">
+                                <span>Product Price :</span>
+                                <span>₹ 200/-</span>
+                            </div>
+                            <div class="flex-j-space-a-center">
+                                <span>Discount :</span>
+                                <span>₹ 125/-</span>
+                            </div>
+                            <div class="flex-j-space-a-center">
+                                <span>Delivery Charges :</span>
+                                <span>₹ 30/-</span>
+                            </div>
+                            <div class="flex-j-space-a-center total-price">
+                                <span>Total Price :</span>
+                                <span>₹ 230/-</span>
+                            </div>
+                            <button class="btn btn-primary-solid mr-5">Proceed to Checkout</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

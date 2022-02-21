@@ -229,3 +229,54 @@
 .btn-sign {
     background-color: var(--color-brand-light);
 }
+
+.cart-items {
+    width: 100%;
+    height: calc(100vh - 14rem);
+    border-radius: 0.5rem;
+    background-color: var(--color-white);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item > img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.cart-item__content {
+    flex: 1;
+}
+
+.cart-col1 {
+    width: 60%;
+}
+
+.cart-col2 {
+    width: 25%;
+}
+
+.btn-wishlist {
+    border-style: none;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.price-details {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    background-color: var(--color-white);
+}
+
+.total-price {
+    font-size: 2rem;
+    font-weight: 600;
+}
