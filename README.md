@@ -5,10 +5,11 @@
 ## Features:
 
 - Clean & Simple UI.
-- Rules on the Homepage.
-- Games section consists of category wise quizes with play button.
-- Quiz will start on click of play button and can be seen on right side.
-- Final answers with correct and selected choices with scores.
+- Categories for different sections and products.
+- SignIn, SignUp and LogOut functionalities.
+- Add to Bag/Cart, Add to Wishlist functionalities.
+- WishList and Cart Pages.
+- Options button for applying filters.
 
 ### How to run in local:
 
