@@ -31,7 +31,7 @@
                             alt="avatar"
                         />
                     </a>
-                    <ion-icon class="icon mx-3" name="options-outline"></ion-icon>
+                    <ion-icon onclick="toggleOptions()" class="icon mx-3" name="options-outline"></ion-icon>
                 </div>
             </nav>
 
@@ -445,8 +445,67 @@
                 </section>
             </div>
         </main>
+        
+        <div id="options" class="p-5">
+            <h4>Filter Options</h4>
+            <div class="flex-column my-5 py-2">
+                <h5>Price</h5>
+                <input type="range" min="1" max="101" value="50" list="steplist" step="20" />
+            </div>
+            <div class="flex-column my-5 py-2">
+                <h5>Category</h5>
+                <div>
+                    <input class="mr-2" type="checkbox" name="category" id="checkbox1" />
+                    <label for="checkbox1">Mobiles</label>
+                </div>
+                <div>
+                    <input class="mr-2" type="checkbox" name="category" id="checkbox2" />
+                    <label for="checkbox2">Tablets</label>
+                </div>
+                <div>
+                    <input class="mr-2" type="checkbox" name="category" id="checkbox3" />
+                    <label for="checkbox3">Games</label>
+                </div>
+                <div>
+                    <input class="mr-2" type="checkbox" name="category" id="checkbox4" />
+                    <label for="checkbox4">Camera</label>
+                </div>
+                <div>
+                    <input class="mr-2" type="checkbox" name="category" id="checkbox5" />
+                    <label for="checkbox5">Smart Watches</label>
+                </div>
+                <div>
+                    <input class="mr-2" type="checkbox" name="category" id="checkbox6" />
+                    <label for="checkbox6">Monitors</label>
+                </div>
+                <div>
+                    <input class="mr-2" type="checkbox" name="category" id="checkbox7" />
+                    <label for="checkbox7">Accessories</label>
+                </div>
+            </div>
+            <div class="flex-column my-5 py-2">
+                <h5>Ratings</h5>
+                <div>
+                    <input class="mr-2" type="radio" name="ratings" id="radio1" />
+                    <label for="radio1">1 star & above</label>
+                </div>
+                <div>
+                    <input class="mr-2" type="radio" name="ratings" id="radio2" />
+                    <label for="radio2">2 stars & above</label>
+                </div>
+                <div>
+                    <input class="mr-2" type="radio" name="ratings" id="radio3" />
+                    <label for="radio3">3 stars & above</label>
+                </div>
+                <div>
+                    <input class="mr-2" type="radio" name="ratings" id="radio4" />
+                    <label for="radio4">4 stars & above</label>
+                </div>
+            </div>
+        </div>
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="./logic/app.js"></script>
     </body>
 </html>
