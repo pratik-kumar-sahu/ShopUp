@@ -94,6 +94,10 @@
     overflow-y: scroll;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 #options {
     position: absolute;
     top: 7.25rem;
@@ -140,6 +144,33 @@
     width: 25rem;
     height: auto;
     overflow: hidden;
+    position: relative;
+}
+
+.product-icon {
+    font-size: 1.8rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 0.6rem;
+    cursor: pointer;
+}
+
+.wishlisted {
+    color: var(--danger);
+}
+
+.top-left {
+    left: 0.6rem;
+}
+
+.top-right {
+    right: 0.6rem;
+}
+
+.product-delete {
+    color: var(--danger);
 }
 
 .product > img {
